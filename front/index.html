@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Mercado </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <!-- Cabeçalho de informações do sistema -->
+        <header>
+            <div class="title">
+                <h2>Lista de Livros</h2>
+            </div>
+            <div class="banner">
+                <img src="https://www.maxieduca.com.br/blog/wp-content/uploads/2016/05/iStock_000083601441_Large-1024x728.jpg"
+                    alt="Não foi possível carregar imagem">
+            </div>
+        </header>
+
+        <!-- Campos para permitir o usuário adicionar produto -->
+        <section class="newItem">
+            <input type="text" id="titulo" placeholder="Digite o título: ">
+            <input type="text" id="autor" placeholder="Autor:">
+            <input type="text" id="editora" placeholder="Editora:">
+            <input type="date" id="data" placeholder="Data:">
+            <input type="text" id="isbn" placeholder="Isbn:">
+            <button class="addBtn" onclick="novoItem()">Adicionar</button>
+        </section>
+
+        <!-- Lista de items existentes -->
+        <section class="items">
+            <table id="myTable">
+                <tr> 
+                    <th> Id </th>
+                    <th> Titulo </th>
+                    <th> Autor </th>
+                    <th> Editora </th>
+                    <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                </tr>
+            </table>
+        </section>
+
+        <script src="script.js" ></script>
+    </body>
+</html>
