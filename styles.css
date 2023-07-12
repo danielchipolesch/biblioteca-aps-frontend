@@ -23,6 +23,30 @@ header {
     position: sticky;
 }
 
+input {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    border: 1px solid;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+    border-color: #000066;
+    box-shadow: 5px 0px 9px #FFFF00;
+    background-color: #66FFFF;
+    color: black;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #f44336;
+    text-shadow: 5px 5px 5px black;
+}
+
 .banner {
     height: 300px;
     overflow: hidden;
@@ -36,37 +60,52 @@ header {
 
 .newItem {
     background-color: rgb(225, 222, 199);
-    padding: 30px 40px; /* atalho para definição dos valores de padding, 2x por vez: top-bottom, left-right */
+    padding: 50px 60px; /* atalho para definição dos valores de padding, 2x por vez: top-bottom, left-right */
     color: white;
-    display: grid;
+    display: list-item;
     justify-content: center;
     grid-template-columns: auto auto auto auto;
 }
 
-#newProduct {
+#titulo {
     margin: 0;
     border: 1px solid rgb(35, 32, 24);
-    width: 85%;
+    width: 10%;
     padding: 10px;
     font-size: 16px;
 }
 
-#newQuantity {
+#autor {
     margin: 0;
     border: 1px solid rgb(35, 32, 24);
-    width: 40%;
+    width: 10%;
     padding: 10px;
     font-size: 16px;
 }
 
-#newPrice {
+#editora {
     margin: 0;
     border: 1px solid rgb(35, 32, 24);
-    width: 30%;
+    width: 10%;
     padding: 10px;
     font-size: 16px;
 }
 
+#publicacao {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 10%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#isbn {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    width: 10%;
+    padding: 10px;
+    font-size: 16px;
+}
 
 .addBtn {
     padding: 9px 10px;
@@ -90,25 +129,54 @@ header {
 }
 
 table,
-th,
 td {
     border: 1px solid black;
     border-collapse: collapse;
     position: relative;
-    padding: 12px 8px 12px 10px;
+    padding: 5px ;
     font-size: 18px;
     transition: 0.2s;
-    text-align: start;
+    text-align: center;
+}
+
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: relative;
+    padding: 70px ;
+    font-size: 18px;
+    transition: 0.2s;
+    text-align: center;
 }
 
 table {
     background-color: white;
-    width: 50%;
+    width: 50%;    
+}
+
+.trash {
+    color: white;
+    width: 20px;
+    height: 20px;    
+}
+
+.btn-trash {
+    cursor: pointer;
+}
+
+.btn-trash:hover {
+    background-color: #f44336;
+    font-weight: bolder; 
+}
+
+.close {
+    background-color: #f44336;
+    font-weight: bolder;    
 }
 
 .close:hover {
     color: #f44336;
-    font-weight: bolder;
+    font-weight: bolder;    
 }
 
 tr:nth-child(odd){

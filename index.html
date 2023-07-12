@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title> Mercado </title>
+        <title>Biblioteca</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
@@ -20,11 +20,12 @@
 
         <!-- Campos para permitir o usuário adicionar produto -->
         <section class="newItem">
-            <input type="text" id="titulo" placeholder="Digite o título: ">
-            <input type="text" id="autor" placeholder="Autor:">
-            <input type="text" id="editora" placeholder="Editora:">
-            <input type="date" id="data" placeholder="Data:">
-            <input type="text" id="isbn" placeholder="Isbn:">
+            <h2>Adicionar novo livro</h2>
+            <input type="text" id="titulo" placeholder="Digite o título" required="required"> <br>
+            <input type="text" id="autor" placeholder="Autor" required="required"><br>
+            <input type="text" id="editora" placeholder="Editora" required="required"><br>
+            <input type="date" id="publicacao" placeholder="publicacao" required="required"><br>
+            <input type="text" id="isbn" placeholder="Isbn" required="required"><br><br>
             <button class="addBtn" onclick="novoItem()">Adicionar</button>
         </section>
 
@@ -32,11 +33,13 @@
         <section class="items">
             <table id="myTable">
                 <tr> 
-                    <th> Id </th>
-                    <th> Titulo </th>
-                    <th> Autor </th>
-                    <th> Editora </th>
-                    <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                    <th>Id</th>
+                    <th>Titulo</th>
+                    <th>Autor</th>
+                    <th>Editora</th>
+                    <th>Publicacao</th>
+                    <th>Isbn</th>
+                    <th>Ações</th>
                 </tr>
             </table>
         </section>
